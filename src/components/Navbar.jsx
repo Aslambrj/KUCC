@@ -1,0 +1,105 @@
+import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const navItems = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/events", label: "Events" },
+    { path: "/gallery", label: "Gallery" },
+    { path: "/members", label: "Executive Members" },
+    { path: "/blog", label: "Insights" },
+    { path: "/qna", label: "Contact & FAQ" },
+  ];
+
+  const getButtonClasses = (path) =>
+    `px-4 py-2 rounded-lg transition-all duration-300 font-medium block w-full text-center ${
+      location.pathname === path
+        ? "bg-blue-600 text-white shadow-md"
+        : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
+    }`;
+
+  const navbarHeight = 48; // h-12 logo + padding
+
+  return (
+    <>
+      {/* Navbar Section */}
+      <nav
+        className="bg-white shadow-md fixed w-full z-30 top-0 left-0"
+        style={{ height: `${navbarHeight}px` }}
+      >
+        <div className="mx-auto flex items-center justify-between h-full px-4 sm:px-6">
+          {/* Logo Section */}
+          <div className="flex items-center h-full">
+            <img
+              src="src/assets/images/ss.png"
+              alt="Logo"
+              className="h-12 cursor-pointer"
+              onClick={() => navigate("/")}
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="text-gray-700 xl:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+
+          {/* Desktop Menu */}
+          <ul className="hidden xl:flex space-x-4">
+            {navItems.map(({ path, label }) => (
+              <li key={path}>
+                <Link to={path} className={getButtonClasses(path)}>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed inset-0 z-20 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        {/* Overlay */}
+        <div
+          className="absolute inset-0 bg-black bg-opacity-40"
+          onClick={() => setIsOpen(false)}
+        />
+
+        {/* Sidebar Menu */}
+        <div
+          className="relative w-64 h-full bg-white shadow-xl p-6 flex flex-col space-y-4"
+          style={{ marginTop: `${navbarHeight}px` }} // Push menu below navbar
+        >
+          {navItems.map(({ path, label }) => (
+            <Link
+              key={path}
+              to={path}
+              className={getButtonClasses(path)}
+              onClick={() => setIsOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Push content below fixed navbar */}
+      <div style={{ height: `${navbarHeight}px` }}></div>
+    </>
+  );
+};
+
+export default Navbar;
