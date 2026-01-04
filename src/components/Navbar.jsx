@@ -10,15 +10,17 @@ const Navbar = () => {
   const navItems = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
+    { path: "/updates", label: "Updates" },   // 👈 Added
     { path: "/events", label: "Events" },
+    { path: "/members", label: "Executive Panel" },
     { path: "/gallery", label: "Gallery" },
-    { path: "/members", label: "Executive Members" },
     { path: "/blog", label: "Insights" },
-    { path: "/qna", label: "Contact & FAQ" },
+    { path: "/partners", label: "Partners" },
+    { path: "/qna", label: "FAQs" },
   ];
 
   const getButtonClasses = (path) =>
-    `px-4 py-2 rounded-lg transition-all duration-300 font-medium block w-full text-center ${
+    `px-3 py-2 rounded-lg transition-all duration-300 font-medium block w-full text-center text-sm sm:text-base md:text-base lg:text-base xl:text-base ${ // Adjusted size for better balance
       location.pathname === path
         ? "bg-blue-600 text-white shadow-md"
         : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
@@ -37,7 +39,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center h-full">
             <img
-              src="src/assets/images/ss.png"
+              src="/assets/images/ss.png"
               alt="Logo"
               className="h-12 cursor-pointer"
               onClick={() => navigate("/")}

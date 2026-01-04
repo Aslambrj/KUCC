@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 const What = () => {
   const container = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.3 },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
   };
 
   const item = {
@@ -16,80 +13,97 @@ const What = () => {
   };
 
   return (
-    // ✅ applied container here
-    <motion.div
-      className="bg-gradient-to-r from-green-100 via-white to-green-200 p-10 rounded-lg shadow-lg my-5"
+    <motion.section
+      className="relative my-5 overflow-hidden rounded-3xl"
       variants={container}
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.3 }}
     >
-      <motion.h2
-        className="text-3xl font-bold text-center text-green-700 mb-6 md:text-4xl lg:text-5xl"
-        variants={item}
-      >
-        What is the Khulna University Career Club?
-      </motion.h2>
+      {/* animated RGB gradient background */}
+      <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-br from-red-500 via-green-500 to-blue-600" />
 
-      <div className="flex flex-col lg:flex-row items-center gap-6">
-        {/* Image Section */}
-        <motion.div
-          className="w-full lg:w-1/3 flex justify-center"
+      {/* soft glow blobs for depth */}
+      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-fuchsia-400/40 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-28 -right-32 h-96 w-96 rounded-full bg-sky-400/40 blur-3xl" />
+
+      {/* glass content panel */}
+      <div className="relative rounded-3xl bg-white/70 backdrop-blur-xl p-6 sm:p-8 md:p-10 shadow-lg">
+        <motion.h2
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-green-700 mb-6"
           variants={item}
         >
-          <img
-            src="src/assets/images/kucclogo.jpg"
-            alt="Career Club"
-            className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-h-48 object-contain"
-          />
+          What is the Khulna University Career Club?
+        </motion.h2>
+
+        <div className="flex flex-col lg:flex-row items-center gap-6">
+          {/* Image Section */}
+          <motion.div className="w-full lg:w-1/3 flex justify-center" variants={item}>
+            <img
+              src="/assets/images/kucclogo.jpg"
+              alt="Career Club"
+              className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 max-h-48 object-contain"
+            />
+          </motion.div>
+
+          {/* Text Section */}
+          <motion.div className="w-full lg:w-2/3" variants={item}>
+            <p className="text-lg text-gray-700 leading-relaxed md:text-xl md:leading-loose">
+              The{" "}
+              <span className="font-semibold text-green-800">Khulna University Career Club</span>{" "}
+              is a student-driven organization aimed at empowering students with the knowledge,
+              skills, and opportunities they need to excel in their careers. Our mission is to
+              bridge the gap between academic learning and professional life, ensuring students are
+              well-prepared for the challenges of the modern job market.
+            </p>
+
+            <p className="text-lg text-gray-700 mt-4 md:text-xl md:leading-loose">
+              By organizing workshops, seminars, career counseling sessions, and networking events,
+              the club provides a platform for students to discover their potential, build essential
+              skills, and connect with industry professionals. Whether you&apos;re exploring your
+              career options or taking the first steps toward your dream job, the{" "}
+              <span className="font-semibold text-green-800">Khulna University Career Club</span>{" "}
+              is your partner in growth and success.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Decorative Divider */}
+        <motion.div className="mt-8" variants={item}>
+          <hr className="border-t-4 border-green-300 rounded-full" />
         </motion.div>
 
-        {/* Text Section */}
-        <motion.div className="w-full lg:w-2/3" variants={item}>
-          <p className="text-lg text-gray-700 leading-relaxed md:text-xl md:leading-loose">
-            The{" "}
-            <span className="font-semibold text-green-800">
-              Khulna University Career Club
-            </span>{" "}
-            is a student-driven organization aimed at empowering students with
-            the knowledge, skills, and opportunities they need to excel in their
-            careers. Our mission is to bridge the gap between academic learning
-            and professional life, ensuring students are well-prepared for the
-            challenges of the modern job market.
+        {/* Call-to-Action */}
+        <motion.div className="text-center mt-8" variants={item}>
+          <p className="text-lg text-gray-700 mb-4 md:text-xl">
+            Ready to take the next step in your career journey?
           </p>
+          <Link
+              to="/signup"  /* change this if you have a different join route */
+              className="px-6 py-3 bg-green-500 text-white font-bold rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300"
+              style={{ pointerEvents: 'none', opacity: 0.6 }} // This will make the button unclickable and visually appear disabled
+            >
+              Join Us Today
+            </Link>
 
-          <p className="text-lg text-gray-700 mt-4 md:text-xl md:leading-loose">
-            By organizing workshops, seminars, career counseling sessions, and
-            networking events, the club provides a platform for students to
-            discover their potential, build essential skills, and connect with
-            industry professionals. Whether you&apos;re exploring your career
-            options or taking the first steps toward your dream job, the{" "}
-            <span className="font-semibold text-green-800">
-              Khulna University Career Club
-            </span>{" "}
-            is your partner in growth and success.
-          </p>
         </motion.div>
       </div>
 
-      {/* Decorative Divider */}
-      <motion.div className="mt-8" variants={item}>
-        <hr className="border-t-4 border-green-300 rounded-full" />
-      </motion.div>
-
-      {/* Call-to-Action Section */}
-      <motion.div className="text-center mt-8" variants={item}>
-        <p className="text-lg text-gray-700 mb-4 md:text-xl">
-          Ready to take the next step in your career journey?
-        </p>
-        <Link
-          to="/signup"
-          className="px-6 py-3 bg-green-500 text-white font-bold rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300"
-        >
-          Join Us Today
-        </Link>
-      </motion.div>
-    </motion.div>
+      {/* local CSS for gradient animation */}
+      <style>
+        {`
+          @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+          .animate-gradient {
+            background-size: 300% 300%;
+            animation: gradientShift 18s ease infinite;
+          }
+        `}
+      </style>
+    </motion.section>
   );
 };
 

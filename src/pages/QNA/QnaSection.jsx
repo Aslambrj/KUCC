@@ -1,4 +1,4 @@
-import AccordionSection from "@/components/AccordionSection";
+import AccordionSection from "@/pages/QNA/AccordionSection";
 
 const faqData = [
   {
@@ -40,6 +40,32 @@ const faqData = [
     question: "Is there any membership fee for joining KUCC?",
     answer:
       "KUCC membership is generally free, but some special events or workshops might have nominal fees, which will be communicated beforehand.",
+  },
+  // Additional FAQs
+  {
+    question: "Can KUCC help me with CV writing and interview preparation?",
+    answer:
+      "Yes, KUCC regularly organizes CV writing workshops and mock interview sessions to help students prepare for the job market and enhance their chances of landing internships or jobs.",
+  },
+  {
+    question: "What is the Governor Segment, and how can I get involved?",
+    answer:
+      "The Governor Segment focuses on leadership and community engagement. Students interested in leadership roles or those passionate about organizing community events can join this segment. It offers various opportunities for skill development and networking.",
+  },
+  {
+    question: "Are there any alumni events or networking opportunities?",
+    answer:
+      "Yes, KUCC frequently hosts alumni networking events where current members can connect with alumni, gain insights into career paths, and build professional relationships.",
+  },
+  {
+    question: "What kind of resources are available for research and academic support?",
+    answer:
+      "The Scholar Segment provides academic support including workshops on research skills, academic writing, and access to resources such as research papers, databases, and academic networks.",
+  },
+  {
+    question: "How can I contribute to KUCC as a volunteer or organizer?",
+    answer:
+      "You can volunteer for KUCC by joining the various organizing teams for events or workshops. Reach out to the club's official channels to express your interest, and you'll be involved in managing and executing events.",
   },
 ];
 

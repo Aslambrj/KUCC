@@ -82,18 +82,15 @@ const Why = () => {
         <h3 className="text-xl font-semibold text-blue-700 mb-3">
           Real Stories, Real Impact
         </h3>
-        <p className="text-gray-700 leading-relaxed mb-2">
-          Joining the Career Club was a turning point in my life. Through their
-          mentorship and workshops, I secured an internship at a leading tech
-          company and gained invaluable confidence in my abilities.
-        </p>
         <p className="text-gray-700 leading-relaxed">
-          Becoming a member of the Career Club marked a transformative moment in
-          my life. The mentorship I received, combined with the insightful
-          workshops, paved the way for me to secure an internship at a leading
-          tech company. This experience not only enhanced my skills but also
-          instilled a profound sense of confidence in my abilities.
+          Joining the club has been a significant milestone in my journey at the university. 
+          It provided me with an environment to enhance my skills, connect with inspiring mentors, 
+          and participate in impactful workshops that bridged the gap between academics and real-world opportunities. 
+          Through its various programs, I not only gained practical experience but also developed essential qualities 
+          such as teamwork, leadership, and confidence. This platform opened doors to internships, networking events, 
+          and career guidance that shaped my vision for the future and motivated me to strive for excellence.
         </p>
+
       </motion.div>
     </motion.div>
   );

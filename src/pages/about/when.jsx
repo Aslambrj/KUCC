@@ -33,8 +33,9 @@ const When = () => {
     {
       title: "Founding Story",
       text:
-        "The club began with a mission to bridge the gap between academic learning and professional skills. Saif Reyad, with a small team of dedicated students, laid the foundation for what would become a cornerstone of career readiness at Khulna University.",
+        "The club started with a vision to connect academic knowledge with real-world skills. It was founded by a group of passionate students aiming to create opportunities for growth and development within the university community.",
     },
+
     {
       title: "Key Milestones",
       list: [

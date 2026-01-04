@@ -1,8 +1,9 @@
 import How from "./How.jsx";
-import Segments from "../../components/Segments.jsx";
+import Segments from "../home/Segments.jsx";
 import What from "./What.jsx";
 import When from "./when.jsx";
 import Why from "./why.jsx";
+// import FAQs from "../QNA/QNASection.jsx/index.js";
 const About = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const About = () => {
       <Why />
       <How />
       <When />
+      {/* <FAQs /> */}
       {/* <Segments /> */}
     </>
   );

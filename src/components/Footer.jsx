@@ -12,15 +12,12 @@ const Footer = () => {
           <div className="col-lg-4 col-md-12 mb-4">
             <h4 className="mb-3 fw-bold">About KUCC</h4>
             <p>
-              Khulna University Computer Club (KUCC) is dedicated to promoting
-              technology and programming among students. Our goal is to nurture
-              talent and create opportunities for future IT leaders.
+              Khulna University Career Club (KUCC) is dedicated to empowering students with the skills and knowledge needed to succeed in their careers. Our mission is to provide opportunities for personal and professional growth, helping students to build a strong foundation for their future careers.
             </p>
             <p>
-              <strong>Vision:</strong> To be a leading platform for students to
-              enhance their technical skills and connect with the global tech
-              community.
+              <strong>Vision:</strong> To be a premier platform for students to enhance their skills, connect with industry leaders, and prepare for successful careers in various fields.
             </p>
+
           </div>
 
           {/* Contact KUCC Section */}
