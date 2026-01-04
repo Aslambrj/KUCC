@@ -1,5 +1,5 @@
 import "./App.css";
-import QnaSection from "./pages/QNA/QNASection";
+import QnaSection from "./pages/QNA/QnaSection";
 import Members from "./pages/member/Members";
 import GallerySection from "./pages/gallery/GallerySection";
 import Profile from "./pages/profile/Profile";
