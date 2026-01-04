@@ -3,6 +3,7 @@
 import Segments from "./Segments.jsx";
 import DynamicContent from "./DynamicContent.jsx";
 import Winner from "../event/Winner.jsx";
+import Awards from "./awards.jsx";
 
 const Home = () => {
   // Example today’s event data (you can fetch or pass dynamically later)
@@ -15,6 +16,12 @@ const Home = () => {
   return (
     <>
       <DynamicContent />
+    {/* winner */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        <Awards/>
+      </section>
+
+   
 
       {/* winner */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
@@ -30,6 +37,8 @@ const Home = () => {
       
       {/* <RecentEvents /> */}
       <Segments />
+      
+
     </>
   );
 };
