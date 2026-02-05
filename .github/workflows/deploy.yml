@@ -26,8 +26,8 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Deploy via FTP using samkirkland action v2
-        uses: samkirkland/ftp-deploy-action@v2
+      - name: Deploy via FTP using samkirkland action v4
+        uses: samkirkland/ftp-deploy-action@v4.0.0
         with:
           server: ftp.kuccofficial.com
           username: aslamworlds@kuccofficial.com
