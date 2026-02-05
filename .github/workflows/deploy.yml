@@ -26,12 +26,12 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
-
-      - name: Deploy via lftp
-        env:
-          FTP_USERNAME: aslamworlds@kuccofficial.com
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        run: |
-          lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD ftp.kuccofficial.com; mirror -R frontend/dist/ /"
+      - name: Deploy via FTP using samkirkland action v2
+        uses: samkirkland/ftp-deploy-action@v2
+        with:
+          server: ftp.kuccofficial.com
+          username: aslamworlds@kuccofficial.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: frontend/dist/
+          server-dir: /
