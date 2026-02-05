@@ -19,7 +19,7 @@ import Update from "./pages/updates/Update";  // 👈 Import
 import LastEventGallary from "./pages/event/lastEventGallary";
 import EventRegistration from "./pages/event/EventRegistration";
 
-
+import MindTheHackForm from "./pages/mind/MindTheHackForm";
 
 
 
@@ -42,8 +42,9 @@ const browserRouter = createBrowserRouter([
       // { path: "/viewevent", element: <ViewEvent /> },
       { path: "/partners", element: <Partners /> },
       { path: "/lastEventGallary", element: <LastEventGallary /> },
-      { path: "/event-registration", element: <EventRegistration /> }
-
+      { path: "/event-registration", element: <EventRegistration /> },
+      
+      { path: "/mind-the-hack", element: <MindTheHackForm /> },
     ],
   },
   { path: "/login", element: <Login /> },

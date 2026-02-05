@@ -10,7 +10,7 @@ const Navbar = () => {
   const navItems = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/updates", label: "Updates" },   // 👈 Added
+    { path: "/updates", label: "Updates" },
     { path: "/events", label: "Events" },
     { path: "/members", label: "Executive Panel" },
     { path: "/gallery", label: "Gallery" },
@@ -20,34 +20,31 @@ const Navbar = () => {
   ];
 
   const getButtonClasses = (path) =>
-    `px-3 py-2 rounded-lg transition-all duration-300 font-medium block w-full text-center text-sm sm:text-base md:text-base lg:text-base xl:text-base ${ // Adjusted size for better balance
+    `px-3 py-2 rounded-lg transition-all duration-300 font-medium block w-full text-center text-sm sm:text-base ${
       location.pathname === path
         ? "bg-blue-600 text-white shadow-md"
         : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
     }`;
 
-  const navbarHeight = 48; // h-12 logo + padding
+  const navbarHeight = 48; // px
 
   return (
     <>
-      {/* Navbar Section */}
+      {/* Navbar */}
       <nav
         className="bg-white shadow-md fixed w-full z-30 top-0 left-0"
         style={{ height: `${navbarHeight}px` }}
       >
-        <div className="mx-auto flex items-center justify-between h-full px-4 sm:px-6">
-          {/* Logo Section */}
-          <div className="flex items-center h-full">
-            <img
-              src="/assets/images/ss.png"
-              alt="Logo"
-              className="h-12 cursor-pointer"
-              onClick={() => navigate("/")}
-              style={{ objectFit: "contain" }}
-            />
-          </div>
+        <div className="flex items-center justify-between h-full px-4 sm:px-6">
+          {/* Logo */}
+          <img
+            src="/assets/images/ss.png"
+            alt="Logo"
+            className="h-12 cursor-pointer"
+            onClick={() => navigate("/")}
+          />
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <button
             className="text-gray-700 xl:hidden"
             onClick={() => setIsOpen(!isOpen)}
@@ -68,22 +65,22 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Sidebar Wrapper */}
       <div
-        className={`fixed inset-0 z-20 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 z-20 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        {/* Overlay */}
+        {/* 👉 TRANSPARENT CLICK AREA (Right Side Only) */}
         <div
-          className="absolute inset-0 bg-black bg-opacity-40"
+          className="absolute top-0 right-0 h-full w-[calc(100%-16rem)] bg-transparent"
           onClick={() => setIsOpen(false)}
         />
 
-        {/* Sidebar Menu */}
+        {/* Sidebar */}
         <div
           className="relative w-64 h-full bg-white shadow-xl p-6 flex flex-col space-y-4"
-          style={{ marginTop: `${navbarHeight}px` }} // Push menu below navbar
+          style={{ marginTop: `${navbarHeight}px` }}
         >
           {navItems.map(({ path, label }) => (
             <Link
@@ -98,8 +95,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Push content below fixed navbar */}
-      <div style={{ height: `${navbarHeight}px` }}></div>
+      {/* Spacer for fixed navbar */}
+      <div style={{ height: `${navbarHeight}px` }} />
     </>
   );
 };
