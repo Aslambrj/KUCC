@@ -27,11 +27,11 @@ jobs:
         run: npm run build
 
       - name: Deploy via FTP
-      uses: samkirkland/ftp-deploy-action@v4.0.0
-      with:
-        server: ftp.kuccofficial.com
-        username: aslamworlds@kuccofficial.com
-        password: ${{ secrets.FTP_PASSWORD }}
-        port: 21
-        local-dir: frontend/dist/
-        server-dir: /
+        uses: samkirkland/ftp-deploy-action@1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx123456
+        with:
+          server: ftp.kuccofficial.com
+          username: aslamworlds@kuccofficial.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: frontend/dist/
+          server-dir: /
