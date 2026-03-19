@@ -13,7 +13,7 @@ const segments = [
     features: ["Programming Workshops", "Web Development", "Tech Career Guidance", "Industry Networking"],
   },
   {
-    title: "Governor Segment",
+    title: "Employment & Entrepreneurship Segment",
     description:
       "Develop leadership skills and explore governance opportunities. Prepare for civil service, public administration, and leadership roles in society.",
     icon: Users,
@@ -21,7 +21,7 @@ const segments = [
     features: ["Leadership Training", "Public Speaking", "Policy Analysis", "Government Exam Prep"],
   },
   {
-    title: "Scholar Segment",
+    title: "Higher Studies & Scholarship Segment",
     description:
       "Excellence in academics and research. Join study groups, research projects, and academic competitions to achieve scholarly success.",
     icon: BookOpen,

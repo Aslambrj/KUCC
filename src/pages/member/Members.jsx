@@ -3,11 +3,14 @@ import executives from "./executives2025";
 import delegates from "./delegates"; // NEW
 import MemberCard from "./MemberCard";
 import executives2026 from "./executives2026"; // NEW
+import juniorExecutives from "./juniorExecutives2026"; // NEW
 
 const Members = () => {
   const board2024 = executives.filter((exec) => exec.id >= 37 && exec.id <= 76);
   const board2025 = executives.filter((exec) => exec.id < 37);
   const board2026 = executives2026; // NEW
+  const board2027 = juniorExecutives; // NEW
+
 
   return (
     <div className="bg-gradient-to-tr from-[#87d6e6] to-[#063bb7] w-full min-h-screen py-10">
@@ -30,6 +33,28 @@ const Members = () => {
           ))}
         </div>
       </section>
+
+
+
+{/* Junior Executives 2026 — landscape */}
+<section className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
+  <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
+    Junior Executive Members 2026/2027
+  </h1>
+
+  <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+    {juniorExecutives.map((exec) => (
+      <MemberCard
+        key={exec.id}
+        id={exec.id}
+        name={exec.name}
+        image={exec.image}
+        orientation="landscape"
+      />
+    ))}
+  </div>
+</section>
+
 
 
 

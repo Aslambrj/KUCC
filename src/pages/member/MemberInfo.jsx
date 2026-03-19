@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import executives from "./executives2025";
 import delegates from "./delegates"; // NEW
 import executives2026 from "./executives2026"; // NEW
+import juniorExecutives from "./juniorExecutives2026";
 
 
 const MemberInfo = () => {
@@ -12,6 +13,7 @@ const MemberInfo = () => {
   const member =
     executives.find((m) => m.id === numericId) ||
     executives2026.find((m) => m.id === numericId) ||
+    juniorExecutives.find((m) => m.id === numericId) ||
     delegates.find((m) => m.id === numericId); // NEW
 
   if (!member) {

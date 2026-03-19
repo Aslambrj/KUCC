@@ -21,9 +21,6 @@ const Home = () => {
     <>
       <DynamicContent />
 
-      {/* <section className="bg-white shadow-lg rounded-2xl p-2">
-         <VisualOdyssey />
-      </section> */}
     {/* winner */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
         <Awards/>
@@ -32,18 +29,16 @@ const Home = () => {
    
 
       {/* winner */}
-      <section className="bg-white shadow-lg rounded-2xl p-2">
+      {/* <section className="bg-white shadow-lg rounded-2xl p-2">
         <Winner/>
-      </section>
+      </section> */}
 
     {/* <section className="bg-white shadow-lg rounded-2xl p-2">
         <UpcomingEvents />
       </section> */}
 
   
-      {/* <Latest event={todayEvent} /> */}
-      
-      {/* <RecentEvents /> */}
+     
       <Segments />
       
 

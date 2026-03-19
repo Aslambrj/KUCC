@@ -3,8 +3,8 @@ import React from "react";
 // Winners data
 const winnersData = [
   { title: "Champion", img: "/assets/MindTheHack/champion.jpg" },
-  { title: "Runner Up", img: "/assets/MindTheHack/runner.jpg" },
-  { title: "Emerging Team", img: "/assets/MindTheHack/emerging.jpg" },
+  { title: "Runner Up", img: "/assets/MindTheHack/emerging.jpg" },
+  { title: "Emerging Team", img: "/assets/MindTheHack/runner.jpg" },
 ];
 
 // Winner Card

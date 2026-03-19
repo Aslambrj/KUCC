@@ -7,6 +7,15 @@ const Calendar = () => {
     // 2025 Events
 
     {
+        date: "17-03-2026",
+        eventName: "Career Talk Series: Episode 5",
+        eventTime: "9:30 PM – 11:00 PM",
+        eventVenue: "Online",
+        description:
+          "This session focused on Effective CV Writing and Interview Readiness, helping participants build strong resumes and prepare confidently for job interviews.",
+      },
+
+    {
         date: "01-03-2026",
         eventName: "Visual Odyssey 2.0",
         eventTime: "4:00 PM – 8:00 PM",
@@ -74,87 +83,317 @@ const Calendar = () => {
         "An event focused on empowering youth through financial literacy, career development, and entrepreneurship.",
     },
 
-    // 2024 Events
-    {
-      date: "09-11-2024",
-      eventName: "TEDx Khulna University",
-      eventTime: "9:00 am – 8:00 pm",
-      eventVenue: "Journalist Liakat Ali Auditorium",
-      description:
-        "TEDx Khulna University is a platform that brings together brilliant minds to share groundbreaking ideas.",
-    },
-    {
-      date: "06-11-2024",
-      eventName: "Mastering BCS 1.0",
-      eventTime: "5:00 PM",
-      eventVenue: "Journalist Liakat Ali Auditorium",
-      description:
-        "Mastering BCS 1.0 aims to provide insights and guidance for students aspiring to ace the BCS exam.",
-    },
-    {
-      date: "07-10-2024",
-      eventName: "Public Speaking Pros 2.0",
-      eventTime: "5:00 PM",
-      eventVenue: "Journalist Liakat Ali Auditorium",
-      description:
-        "Public Speaking Pros 2.0 offers a platform for students to showcase their public speaking skills.",
-    },
-    {
-      date: "22-10-2024",
-      eventName: "Higher Education & Exchange Opportunities in the US",
-      eventTime: "11:00 am – 12:00 pm",
-      eventVenue: "Journalist Liakat Ali Auditorium",
-      description:
-        "This seminar provides valuable insights into studying in the US, including the application process and visa procedures.",
-    },
-    {
-      date: "08-07-2024",
-      eventName: "Roadmap to ICCR (India)",
-      eventTime: "9:00 PM",
-      eventVenue: "Online",
-      description:
-        "This session focuses on studying in India through the ICCR scholarship program, covering the application processes.",
-    },
-    {
-      date: "23-06-2024",
-      eventName: "LinkedIn Excellency 3.0",
-      eventTime: "9:00 PM",
-      eventVenue: "Online",
-      description:
-        "LinkedIn Excellency 3.0 is a session about optimizing LinkedIn profiles for career growth and professional opportunities.",
-    },
-    {
-      date: "14-06-2024",
-      eventName: "Higher Education Abroad Episode 01: Roadmap To USA",
-      eventTime: "8:30 PM",
-      eventVenue: "Online",
-      description:
-        "Insights into the U.S. education system, application steps, and tips for studying in the USA.",
-    },
-    {
-      date: "23-04-2024",
-      eventName: "Design Your Future: Career Opportunity with Design Skill",
-      eventTime: "5:20 PM",
-      eventVenue: "Journalist Liakat Ali Auditorium",
-      description:
-        "A session guiding students to explore diverse career paths in design, focusing on creativity and innovation.",
-    },
-    {
-      date: "28-02-2024 – 09-03-2024",
-      eventName: "BYLC Career X",
-      eventTime: "9:00 am – 5:00 pm",
-      eventVenue: "URP Lecture Theatre & Online",
-      description:
-        "BYLC Career X, in collaboration with Bangladesh Youth Leadership Center, focused on leadership, CV writing, teamwork, and other job skills. Held both offline and online.",
-    },
-    {
-      date: "20-01-2024",
-      eventName: "Mind The Hack",
-      eventTime: "12:00 PM",
-      eventVenue: "Offline",
-      description:
-        "A social case competition aimed at solving real-world social and environmental issues in Khulna.",
-    },
+
+
+       {
+    "date": "9th November, 2024",
+    "eventName": "TEDx Khulna University",
+    "eventTime": "9.00 am – 8.00 pm",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A platform that brings together brilliant minds to share ground-breaking ideas through captivating talks from renowned speakers."
+  },
+  {
+    "date": "6 November, 2024",
+    "eventName": "Mastering BCS 1.O",
+    "eventTime": "5:00 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "An event providing valuable insights and expert guidance from professionals and alumni for students aspiring to ace the BCS exam."
+  },
+  {
+    "date": "7 October, 2024",
+    "eventName": "Public Speaking Pros 2.O",
+    "eventTime": "5:00 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A solo public speaking competition for Khulna University students to showcase eloquence and communication skills through video and live rounds."
+  },
+  {
+    "date": "22nd October, 2024",
+    "eventName": "Higher Education & Exchange Opportunities in the US",
+    "eventTime": "11.00 am – 12.00 pm",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A seminar in collaboration with the US Embassy covering application processes, visa procedures, and cultural nuances of studying in the US."
+  },
+  {
+    "date": "8 July, 2024",
+    "eventName": "Higher education abroad Episode 01: Roadmap To ICCR (India)",
+    "eventTime": "9:00 PM",
+    "eventVenue": "online",
+    "description": "A session focused on guiding students through the process of studying in India via the ICCR scholarship program."
+  },
+  {
+    "date": "23 June, 2024",
+    "eventName": "LinkedIn Excellency 3.O",
+    "eventTime": "9:00 PM",
+    "eventVenue": "online",
+    "description": "An interactive online session to help students build a powerful LinkedIn presence, focusing on profile optimization and networking."
+  },
+  {
+    "date": "14 June, 2024",
+    "eventName": "Higher education abroad Episode 01: Roadmap To USA",
+    "eventTime": "8:30 PM",
+    "eventVenue": "online",
+    "description": "A virtual guide covering the U.S. education system, application steps, scholarships, and visa procedures."
+  },
+  {
+    "date": "23 April, 2024",
+    "eventName": "Design Your Future: Career Opportunity with Design Skill",
+    "eventTime": "5:20 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A session aimed at guiding students in exploring diverse career paths through design thinking and portfolio building."
+  },
+  {
+    "date": "18 April, 2024",
+    "eventName": "Basic slide & Poster Designing session and Competition",
+    "eventTime": "9.00 PM",
+    "eventVenue": "Online",
+    "description": "A creative event (Creative Canvas) focused on enhancing design skills using Canva, including a competition and learning session."
+  },
+  {
+    "date": "30 March, 2024 – 2nd April 2024",
+    "eventName": "KUCC Presents “Writeopia” Intra Club Content writing Competition 2024",
+    "eventTime": "5.00 PM",
+    "eventVenue": "Online",
+    "description": "An intra-club competition for storytellers and pen-warriors to showcase creativity and storytelling skills."
+  },
+  {
+    "date": "23 March, 2024",
+    "eventName": "KUCC General Member Recruitment",
+    "eventTime": "12.00 PM",
+    "eventVenue": "Offline",
+    "description": "A recruitment drive for the four segments of KUCC (Governor, Language, IT, and Scholar) providing networking and development opportunities."
+  },
+  {
+    "date": "28th February – 9th March, 2024",
+    "eventName": "BYLC Career X",
+    "eventTime": "9.00 am – 5.00 pm",
+    "eventVenue": "URP Lecture Theatre & Online",
+    "description": "A training program covering job-related topics such as leadership, CV writing, interviewing, and career planning."
+  },
+  {
+    "date": "20 January, 2024",
+    "eventName": "Mind The Hack",
+    "eventTime": "12.00 PM",
+    "eventVenue": "Offline",
+    "description": "A social case competition where students tackle real-world social and environmental issues facing the Khulna region."
+  },
+  {
+    "date": "12th February, 2023",
+    "eventName": "BRAC BANK Career Talk at Khulna University",
+    "eventTime": "02.00 pm to 04.00 pm",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "An interactive session with top-level executives sharing knowledge on the banking industry and career opportunities at BRAC BANK."
+  },
+  {
+    "date": "28th Dec, 2023",
+    "eventName": "Session on Graphics Design",
+    "eventTime": "8:30 PM",
+    "eventVenue": "Online",
+    "description": "An informative session on the design and creative industries, featuring the results of the Visual Odyssey Poster Design Contest."
+  },
+  {
+    "date": "19th Dec, 2023",
+    "eventName": "Visual Odyssey (Poster Design Contest)",
+    "eventTime": "01:00 PM",
+    "eventVenue": "Online",
+    "description": "A poster design competition addressing the Israel-Palestine conflict to raise awareness and showcase design expertise."
+  },
+  {
+    "date": "4th Dec-12th Dec, 2023",
+    "eventName": "KUCC INTRA CLUB CASE COMPETITION 2023 (Impactors Hunt)",
+    "eventTime": "03:00 PM",
+    "eventVenue": "Online",
+    "description": "A signature event aimed at fostering creative problem-solving and analytical skills through real-world case studies."
+  },
+  {
+    "date": "29th Aug, 2023",
+    "eventName": "Session on Etiquettes for Formal Email Writing",
+    "eventTime": "09:00 PM",
+    "eventVenue": "Online",
+    "description": "A virtual session via Google Meet focusing on the proper structure, tone, and etiquette for professional email communication."
+  },
+  {
+    "date": "25th-26th Aug, 2023",
+    "eventName": "Session on “Corporate Branding and Communication”",
+    "eventTime": "09:00 PM",
+    "eventVenue": "Online",
+    "description": "A two-day online training program led by an expert in brand marketing to enhance understanding of branding and communication."
+  },
+  {
+    "date": "20th Aug, 2023",
+    "eventName": "KUCC Education Expo 1.0",
+    "eventTime": "09:30 AM-6:30 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A grand initiative showcasing global educational and career prospects from 18 different countries."
+  },
+  {
+    "date": "10 June, 2023",
+    "eventName": "Session on “Depression, Mental Health and Stress Management”",
+    "eventTime": "3:00-5:00 PM",
+    "eventVenue": "Online",
+    "description": "A collaborative session with Moner School providing strategies to improve mental well-being and manage stress."
+  },
+  {
+    "date": "26th March, 2023",
+    "eventName": "Session on \"LinkedIn Excellency 2.0\"",
+    "eventTime": "3:00-4:15 PM",
+    "eventVenue": "Online",
+    "description": "An exclusive workshop for club members on creating and optimizing LinkedIn profiles for professional visibility."
+  },
+  {
+    "date": "10th-12th March, 2023",
+    "eventName": "Public Speaking Pros",
+    "eventTime": "4:00-6:30 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A dynamic public speaking competition in English and Bangla categories, featuring guest debaters and speakers."
+  },
+  {
+    "date": "12th March, 2023",
+    "eventName": "Higher Education Abroad",
+    "eventTime": "4:00-6:30 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A workshop providing guidance on program selection, scholarships, and application processes for international studies. "
+  },
+  {
+    "date": "24th May, 2022",
+    "eventName": "Unilever Leadership Internship Programme (ULIP) Roadshow-2022",
+    "eventTime": "9.00 am – 8.00 pm",
+    "eventVenue": "Online",
+    "description": "A roadshow for Unilever's flagship internship program, offering final-year students insights into corporate strategies and leaders."
+  },
+  {
+    "date": "8 June, 2022",
+    "eventName": "Opportunities in the United States",
+    "eventTime": "03.00 pm",
+    "eventVenue": "URP Lecture Theatre",
+    "description": "A collaborative seminar with the US Embassy regarding academic programs, application processes, and funding options in the US. "
+  },
+  {
+    "date": "Not specified",
+    "eventName": "Get Future Ready with Grameenphone Academy",
+    "eventTime": "Not specified",
+    "eventVenue": "Online",
+    "description": "A free upskilling platform providing courses in Career Launchpad, Cybersecurity, IoT, and Python."
+  },
+  {
+    "date": "27th September, 2022",
+    "eventName": "IELTS and Professional English",
+    "eventTime": "4.30 pm",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A session led by Munzereen Shahid focusing on IELTS preparation and essential professional communication skills."
+  },
+  {
+    "date": "4 April, 2022",
+    "eventName": "Spell It Season 1",
+    "eventTime": "2.00 PM",
+    "eventVenue": "Offline",
+    "description": "An English language contest for freshers focusing on spelling, vocabulary, pronunciation, and grammar. "
+  },
+  {
+    "date": "27 May, 2022",
+    "eventName": "Workshop on PowerPoint – Zero to Hero",
+    "eventTime": "9.30 AM",
+    "eventVenue": "CSE Gallery Room, 1 no. Building",
+    "description": "A free workshop helping students master the basics of creating impactful PowerPoint presentations."
+  },
+  {
+    "date": "6 August, 2022",
+    "eventName": "career Talk with KU Graduates",
+    "eventTime": "10 AM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A motivational session where graduates share their journeys in government (BCS) and development sectors."
+  },
+  {
+    "date": "26 August, 2022",
+    "eventName": "Spell It Season 2",
+    "eventTime": "10 AM",
+    "eventVenue": "Offline",
+    "description": "A spelling and language competition open to students from schools, colleges, and universities across Bangladesh."
+  },
+  {
+    "date": "9 September, 2022",
+    "eventName": "Discussion Session: Gateway to Government Job",
+    "eventTime": "9:30 AM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A guide on preparing for government positions like bank jobs and the BCS with expert DD and administrator speakers."
+  },
+  {
+    "date": "29 September, 2022",
+    "eventName": "Career Talk: Journey from KU to Big Tech Companies",
+    "eventTime": "4:30 PM",
+    "eventVenue": "CSE Gallery Room",
+    "description": "A guide featuring speakers who secured positions at big tech firms sharing interview tips and experiences."
+  },
+  {
+    "date": "24 June, 2021",
+    "eventName": "Campus to Career",
+    "eventTime": "8:00 PM",
+    "eventVenue": "Online",
+    "description": "An online career session regarding 21st Century employability skills and global skill development courses."
+  },
+  {
+    "date": "13 August, 2021",
+    "eventName": "European Joint Master’s with Erasmus+ Scholarship",
+    "eventTime": "7:30 PM",
+    "eventVenue": "Online",
+    "description": "An enlightening webinar on fully funded study abroad opportunities in Europe via Erasmus+ scholarships."
+  },
+  {
+    "date": "3rd September, 2021",
+    "eventName": "Workshop On Skill Development to Cope with a New Environment",
+    "eventTime": "4:00 to 5:00 PM",
+    "eventVenue": "Online",
+    "description": "A collaborative workshop focusing on personal potential and adapting to new professional environments."
+  },
+  {
+    "date": "9 January, 2020",
+    "eventName": "Seminar On “Higher Study Prospects in USA”",
+    "eventTime": "5.00 PM",
+    "eventVenue": "URP Lecture Theater",
+    "description": "A session detailing the application process for Master's and PhD programs in the US with Education USA guidance."
+  },
+  {
+    "date": "20 January, 2020",
+    "eventName": "career Development Workshop",
+    "eventTime": "3.00 PM",
+    "eventVenue": "Journalist Liakat Ali Auditorium",
+    "description": "A workshop covering resume writing, interview skills, and corporate culture to prepare students for the corporate world."
+  },
+  {
+    "date": "21 March, 2020",
+    "eventName": "“দেশকে নিকে ভাবিা”",
+    "eventTime": "3.00 PM",
+    "eventVenue": "Online",
+    "description": "A writing initiative celebrating the birth centenary of Bangabandhu, inviting visions for Bangladesh's future."
+  },
+  {
+    "date": "17 July, 2020",
+    "eventName": "Career Pathway 01: Startup and Development Sector",
+    "eventTime": "7:30 PM",
+    "eventVenue": "Online",
+    "description": "A session exploring the future of startup and development careers in the 'New Normal'."
+  },
+  {
+    "date": "10 August, 2020",
+    "eventName": "“বইক াোর সন্ধাকি ১.০”",
+    "eventTime": "Not specified",
+    "eventVenue": "Online",
+    "description": "An online book reading contest honoring National Mourning Day, testing analytical and literary knowledge."
+  },
+  {
+    "date": "8 October, 2020",
+    "eventName": "Linked IN Profile Contest",
+    "eventTime": "Not specified",
+    "eventVenue": "Online",
+    "description": "A contest and workshop promoting professional networking and well-curated LinkedIn profiles for KU students."
+  },
+  {
+    "date": "21 November, 2020",
+    "eventName": "Higher study Prospect in the USA: A Post Covid Scenario",
+    "eventTime": "7:00 PM",
+    "eventVenue": "Online",
+    "description": "A virtual session detailing SOP writing, GRE/TOEFL preparation, and PhD planning for international education post-Covid."
+  },
+
   ];
 
   const rowVariants = {

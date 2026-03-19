@@ -6,12 +6,37 @@ const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    
+           
+        "/assets/gallary/2614.jpg",
+        "/assets/gallary/2615.jpg",
+            "/assets/gallary/2607.jpg",
+        "/assets/gallary/2608.jpg",
+        "/assets/gallary/2609.jpg",
+        "/assets/gallary/2610.jpg",
+        "/assets/gallary/2611.jpg",
+        "/assets/gallary/2612.jpg",
+        "/assets/gallary/2613.jpg",
+        
+        "/assets/gallary/2616.jpg",
+        "/assets/gallary/2617.jpg",
+        "/assets/gallary/2618.jpg",
+        "/assets/gallary/2619.jpg",
+        "/assets/gallary/2620.jpg",
+        "/assets/gallary/2621.jpg",
+        "/assets/gallary/2622.jpg",
+        "/assets/gallary/2623.jpg",
+        "/assets/gallary/2624.jpg",
+        "/assets/gallary/2625.jpg",
+        "/assets/gallary/2626.jpg",
+        "/assets/gallary/2627.jpg",
+        "/assets/gallary/2628.jpg",
+        "/assets/gallary/2629.jpg",
+        "/assets/gallary/2630.jpg",
+
 
     
     "/assets/gallary/2601.jpg",
     "/assets/gallary/2602.jpg",
-    "/assets/gallary/2603.jpg",
     "/assets/gallary/2604.jpg",
     "/assets/gallary/2605.jpg",
     "/assets/gallary/2606.jpg",
