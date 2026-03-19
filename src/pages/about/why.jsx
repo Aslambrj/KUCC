@@ -26,7 +26,7 @@ const Why = () => {
         className="text-3xl font-bold text-center text-blue-700 mb-6 md:text-4xl lg:text-5xl"
         variants={item}
       >
-        Why Join the Career Club?
+        Why to Join the Career Club?
       </motion.h2>
 
       <motion.p

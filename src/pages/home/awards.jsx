@@ -31,7 +31,7 @@ const Awards = () => {
       title: "Best University Career Club Award",
       year: "2025",
       description:
-        "Achieved the prestigious Best Club Award for the second consecutive year, reflecting KUCC’s sustained excellence, innovation, and dedication to empowering students’ career journeys.",
+        "Achieved the prestigious Best Club Award for the second consecutive year, reflecting KUCC’s sustained excellence, innovation, and dedication to empowering student's career journeys.",
       icon: "🏆",
     },
     {
@@ -48,7 +48,7 @@ const Awards = () => {
       <style>{`
         .awards {
           padding: 90px 10%;
-          background: linear-gradient(135deg, #111827, #020617);
+          background: linear-gradient(135deg, #1f2937, #0f172a);
           color: #e5e7eb;
         }
 
