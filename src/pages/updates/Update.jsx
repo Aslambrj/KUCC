@@ -4,6 +4,7 @@ import Winner from "../event/Winner.jsx";
 // import Collaboration from "./Collaboration.jsx";
 import VisualOdyssey from "./VisualOdysseyWinner.jsx";
 import MindTheHack from "./MindTheHackWinner.jsx";
+import smef from "./smef.jsx";
 
 
 const Update = () => {
@@ -16,6 +17,12 @@ const Update = () => {
              Club Updates
             </h1>
 
+
+
+      {/* YESS Event Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {smef()}
+      </section>
 
       {/* Collaboration*/}
       {/* <section className="bg-white shadow-lg rounded-2xl p-2">
