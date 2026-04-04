@@ -7,6 +7,8 @@ import Awards from "./awards.jsx";
 // import MindTheHackForm from "../mind/MindTheHackForm";
 import VisualOdyssey from "../event/VisualOdyssey.jsx";
 
+import Nextgen3 from "../updates/nextgen3.jsx";
+
 
 
 const Home = () => {
@@ -20,6 +22,11 @@ const Home = () => {
   return (
     <>
       <DynamicContent />
+
+     <section className="bg-white shadow-lg rounded-2xl p-2">
+       <Nextgen3/>
+      </section>
+    
 
     {/* winner */}
       <section className="bg-white shadow-lg rounded-2xl p-2">

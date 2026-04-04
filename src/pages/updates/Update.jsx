@@ -5,6 +5,7 @@ import Winner from "../event/Winner.jsx";
 import VisualOdyssey from "./VisualOdysseyWinner.jsx";
 import MindTheHack from "./MindTheHackWinner.jsx";
 import smef from "./smef.jsx";
+import nextgen3 from "./nextgen3.jsx";
 
 
 const Update = () => {
@@ -18,10 +19,22 @@ const Update = () => {
             </h1>
 
 
+   {/* NextGen 3.0 Event Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {nextgen3()}
+      </section>
+
+
+
 
       {/* YESS Event Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
         {smef()}
+      </section>
+
+      {/* NextGen 3.0 Event Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {nextgen3()}
       </section>
 
       {/* Collaboration*/}
