@@ -8,6 +8,7 @@ import Awards from "./awards.jsx";
 import VisualOdyssey from "../event/VisualOdyssey.jsx";
 
 import Nextgen3 from "../updates/nextgen3.jsx";
+import TreasureHunt from "../updates/TreasurerHunt.jsx";
 
 
 
@@ -22,6 +23,9 @@ const Home = () => {
   return (
     <>
       <DynamicContent />
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+       <TreasureHunt/>
+      </section>
 
      <section className="bg-white shadow-lg rounded-2xl p-2">
        <Nextgen3/>
