@@ -162,42 +162,70 @@ const TreasureHunt = () => {
         </div>
       </div>
 
-      {/* Glitch Effect */}
-      <style>
-        {`
-        .glitch {
-          position: relative;
-        }
+     <style>
+{`
+.glitch {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
 
-        .glitch::before,
-        .glitch::after {
-          content: "NEXTGEN 3.0 TREASURE HUNT";
-          position: absolute;
-          left: 0;
-          width: 100%;
-        }
+/* base text stays centered */
+.glitch span {
+  position: relative;
+  z-index: 2;
+}
 
-        .glitch::before {
-          color: red;
-          animation: glitchTop 1s infinite;
-        }
+/* glitch layers */
+.glitch::before,
+.glitch::after {
+  content: "NEXTGEN 3.0 TREASURE HUNT";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  pointer-events: none;
+  text-align: center;
+}
 
-        .glitch::after {
-          color: blue;
-          animation: glitchBottom 1s infinite;
-        }
+/* red layer */
+.glitch::before {
+  color: red;
+  z-index: 1;
+  animation: glitchTop 1s infinite linear alternate-reverse;
+  opacity: 0.7;
+}
 
-        @keyframes glitchTop {
-          0% { transform: translate(-2px, -2px); }
-          100% { transform: translate(2px, 2px); }
-        }
+/* blue layer */
+.glitch::after {
+  color: cyan;
+  z-index: 0;
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+  opacity: 0.7;
+}
 
-        @keyframes glitchBottom {
-          0% { transform: translate(2px, 2px); }
-          100% { transform: translate(-2px, -2px); }
-        }
-        `}
-      </style>
+/* animation */
+@keyframes glitchTop {
+  0% { transform: translate(-50%, -1px); }
+  100% { transform: translate(-50%, 1px); }
+}
+
+@keyframes glitchBottom {
+  0% { transform: translate(-50%, 1px); }
+  100% { transform: translate(-50%, -1px); }
+}
+
+/* mobile tuning (DON'T kill glitch) */
+@media (max-width: 768px) {
+  .glitch::before,
+  .glitch::after {
+    opacity: 0.4;
+  }
+}
+`}
+</style>
     </div>
   );
 };
