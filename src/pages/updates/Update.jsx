@@ -6,6 +6,7 @@ import VisualOdyssey from "./VisualOdysseyWinner.jsx";
 import MindTheHack from "./MindTheHackWinner.jsx";
 import smef from "./smef.jsx";
 import nextgen3 from "./nextgen3.jsx";
+import treasureHunt from "./TreasurerHunt.jsx";
 
 
 const Update = () => {
@@ -17,6 +18,12 @@ const Update = () => {
                drop-shadow-lg animate-pulse">
              Club Updates
             </h1>
+
+      {/* Treasure Hunt */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {treasureHunt()}
+      </section>
+
 
 
    {/* NextGen 3.0 Event Section */}
