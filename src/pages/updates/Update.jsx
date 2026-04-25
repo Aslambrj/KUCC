@@ -7,6 +7,7 @@ import MindTheHack from "./MindTheHackWinner.jsx";
 import smef from "./smef.jsx";
 import nextgen3 from "./nextgen3.jsx";
 import treasureHunt from "./TreasurerHunt.jsx";
+import genSubmission from "./genSubmission.jsx";
 
 
 const Update = () => {
@@ -19,6 +20,11 @@ const Update = () => {
              Club Updates
             </h1>
 
+
+      {/* Submission Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {genSubmission()}
+      </section>
       {/* Treasure Hunt */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
         {treasureHunt()}
