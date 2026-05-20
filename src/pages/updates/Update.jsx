@@ -8,6 +8,7 @@ import smef from "./smef.jsx";
 import nextgen3 from "./nextgen3.jsx";
 import treasureHunt from "./TreasurerHunt.jsx";
 import genSubmission from "./genSubmission.jsx";
+import CareerTalkSeries6 from "./careerTalk6.jsx";
 
 
 const Update = () => {
@@ -19,6 +20,13 @@ const Update = () => {
                drop-shadow-lg animate-pulse">
              Club Updates
             </h1>
+
+      
+      {/* Submission Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {<CareerTalkSeries6 />}
+      </section>
+
 
 
       {/* Submission Section */}
@@ -32,10 +40,10 @@ const Update = () => {
 
 
 
-   {/* NextGen 3.0 Event Section */}
+   {/* NextGen 3.0 Event Section
       <section className="bg-white shadow-lg rounded-2xl p-2">
         {nextgen3()}
-      </section>
+      </section> */}
 
 
 
@@ -45,15 +53,7 @@ const Update = () => {
         {smef()}
       </section>
 
-      {/* NextGen 3.0 Event Section */}
-      <section className="bg-white shadow-lg rounded-2xl p-2">
-        {nextgen3()}
-      </section>
-
-      {/* Collaboration*/}
-      {/* <section className="bg-white shadow-lg rounded-2xl p-2">
-        <Collaboration/>
-      </section> */}
+      
 
 
       {/* Visual Odyssey Winner */}

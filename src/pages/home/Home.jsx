@@ -10,6 +10,7 @@ import VisualOdyssey from "../event/VisualOdyssey.jsx";
 import Nextgen3 from "../updates/nextgen3.jsx";
 import TreasureHunt from "../updates/TreasurerHunt.jsx";
 import GenSubmissions from "../updates/genSubmission.jsx";
+import CareerTalkSeries6 from "../updates/careerTalk6.jsx";
 
 
 
@@ -25,15 +26,17 @@ const Home = () => {
     <>
       <DynamicContent />
     
-  
+  <section className="bg-white shadow-lg rounded-2xl p-2">
+       <CareerTalkSeries6/>
+      </section>
 
-      <section className="bg-white shadow-lg rounded-2xl p-2">
+      {/* <section className="bg-white shadow-lg rounded-2xl p-2">
        <GenSubmissions/>
-      </section>
+      </section> */}
 
-     <section className="bg-white shadow-lg rounded-2xl p-2">
+     {/* <section className="bg-white shadow-lg rounded-2xl p-2">
        <Nextgen3/>
-      </section>
+      </section> */}
     
 
     {/* winner */}
