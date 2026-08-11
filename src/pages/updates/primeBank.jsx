@@ -29,7 +29,7 @@ const EmpoweringYouthSeason2 = () => {
           </h1>
 
           <p className="text-center text-lg font-semibold text-blue-800">
-            Prime Bank Presents | Organized by Khulna University Career Club
+           Engaging and Inspiring Youth in Banking
           </p>
 
           {/* Introduction */}
