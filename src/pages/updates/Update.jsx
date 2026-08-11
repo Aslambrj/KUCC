@@ -9,7 +9,7 @@ import nextgen3 from "./nextgen3.jsx";
 import treasureHunt from "./TreasurerHunt.jsx";
 import genSubmission from "./genSubmission.jsx";
 import CareerTalkSeries6 from "./careerTalk6.jsx";
-
+import primeBank from "./primeBank.jsx";
 
 const Update = () => {
   return (
@@ -21,6 +21,10 @@ const Update = () => {
              Club Updates
             </h1>
 
+      {/* Prime Bank Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {primeBank()}
+      </section>
       
       {/* Submission Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
