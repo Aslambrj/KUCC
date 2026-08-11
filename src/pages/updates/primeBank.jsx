@@ -36,7 +36,7 @@ const EmpoweringYouthSeason2 = () => {
           <p>
             Khulna University Career Club is pleased to welcome you to{" "}
             <b>Empowering Youth Season 2.0</b>, an engaging initiative by{" "}
-            <b>Prime Bank</b> designed to connect young minds with the evolving
+            <b>PrimeAcademia of Prime Bank</b> designed to connect young minds with the evolving
             world of banking, career development, and financial opportunities.
           </p>
 
