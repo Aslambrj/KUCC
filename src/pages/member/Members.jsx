@@ -6,17 +6,25 @@ import executives2026 from "./executives2026"; // NEW
 import juniorExecutives from "./juniorExecutives2026"; // NEW
 
 const Members = () => {
-  const board2024 = executives.filter((exec) => exec.id >= 37 && exec.id <= 76);
-  const board2025 = executives.filter((exec) => exec.id < 37);
+  const board2024 = executives.filter(
+    (exec) => exec.id >= 37 && exec.id <= 76
+  );
+
+  const board2025 = executives.filter(
+    (exec) => exec.id < 37
+  );
+
   const board2026 = executives2026; // NEW
   const board2027 = juniorExecutives; // NEW
-
 
   return (
     <div className="bg-gradient-to-tr from-[#87d6e6] to-[#063bb7] w-full min-h-screen py-10">
 
-   {/* 2026 — landscape */}
-      <section className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
+      {/* 2026 — landscape */}
+      <section
+        id="board-2026"
+        className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10 scroll-mt-20"
+      >
         <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
           Executive Board Members 2026/2027
         </h1>
@@ -34,29 +42,24 @@ const Members = () => {
         </div>
       </section>
 
+      {/* Junior Executives 2026 — landscape */}
+      <section className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
+        <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
+          Junior Executive Members 2026/2027
+        </h1>
 
-
-{/* Junior Executives 2026 — landscape */}
-<section className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
-  <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
-    Junior Executive Members 2026/2027
-  </h1>
-
-  <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
-    {juniorExecutives.map((exec) => (
-      <MemberCard
-        key={exec.id}
-        id={exec.id}
-        name={exec.name}
-        image={exec.image}
-        orientation="landscape"
-      />
-    ))}
-  </div>
-</section>
-
-
-
+        <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+          {juniorExecutives.map((exec) => (
+            <MemberCard
+              key={exec.id}
+              id={exec.id}
+              name={exec.name}
+              image={exec.image}
+              orientation="landscape"
+            />
+          ))}
+        </div>
+      </section>
 
       {/* Title */}
       <section className="flex flex-col items-center justify-center text-center mx-auto py-5 px-6 sm:px-12 md:px-20">
@@ -69,10 +72,14 @@ const Members = () => {
       </section>
 
       {/* 2025 — landscape */}
-     <section className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
+      <section
+        id="board-2025"
+        className="bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#06b6d4] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10 scroll-mt-20"
+      >
         <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
           Executive Board Members 2025/2026
         </h1>
+
         <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
           {board2025.map((exec) => (
             <MemberCard
@@ -91,9 +98,11 @@ const Members = () => {
         <h1 className="text-center mb-1 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white drop-shadow-md border-b border-white/30 pb-2">
           Discipline Delegates 2025
         </h1>
+
         <p className="text-center text-base sm:text-lg mt-3 text-white/80 font-medium tracking-wide">
           Meet the newly appointed delegates representing each discipline for 2025
         </p>
+
         <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(220px,1fr))] mt-8">
           {delegates.map((d) => (
             <MemberCard
@@ -109,13 +118,16 @@ const Members = () => {
         </div>
       </section>
 
-
       {/* 2024 — portrait */}
       {board2024.length > 0 && (
-        <section className="bg-gradient-to-tr from-[#a0d8f1] to-[#63b3ed] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10">
+        <section
+          id="board-2024"
+          className="bg-gradient-to-tr from-[#a0d8f1] to-[#63b3ed] w-11/12 mx-auto my-10 shadow-2xl rounded-2xl px-4 sm:px-8 py-10 scroll-mt-20"
+        >
           <h1 className="text-center mb-8 text-2xl sm:text-3xl lg:text-4xl font-semibold border-b border-gray-900 pb-2">
             Executive Board Members 2024/2025
           </h1>
+
           <div className="grid gap-8 justify-center grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
             {board2024.map((exec) => (
               <MemberCard
@@ -130,7 +142,6 @@ const Members = () => {
         </section>
       )}
 
-      
     </div>
   );
 };
