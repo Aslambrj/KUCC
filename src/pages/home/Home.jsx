@@ -12,6 +12,7 @@ import TreasureHunt from "../updates/TreasurerHunt.jsx";
 import GenSubmissions from "../updates/genSubmission.jsx";
 
 import PrimeBank from "../updates/primeBank.jsx";
+import UsGreencard from "../updates/UsGreencard.jsx";
 
 
 
@@ -26,6 +27,12 @@ const Home = () => {
   return (
     <>
       <DynamicContent />
+
+      {/* Today's Event Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+       <UsGreencard/>
+      </section>
+    
     
     <section className="bg-white shadow-lg rounded-2xl p-2">
        <PrimeBank/>

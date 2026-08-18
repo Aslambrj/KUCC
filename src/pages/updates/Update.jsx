@@ -10,6 +10,7 @@ import treasureHunt from "./TreasurerHunt.jsx";
 import genSubmission from "./genSubmission.jsx";
 import CareerTalkSeries6 from "./careerTalk6.jsx";
 import primeBank from "./primeBank.jsx";
+import UsGreencard from "./UsGreencard.jsx";
 
 const Update = () => {
   return (
@@ -20,6 +21,11 @@ const Update = () => {
                drop-shadow-lg animate-pulse">
              Club Updates
             </h1>
+
+      {/* US Green Card Event Section */}
+      <section className="bg-white shadow-lg rounded-2xl p-2">
+        {<UsGreencard />}
+      </section>
 
       {/* Prime Bank Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
