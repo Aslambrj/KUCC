@@ -11,6 +11,7 @@ import genSubmission from "./genSubmission.jsx";
 import CareerTalkSeries6 from "./careerTalk6.jsx";
 import primeBank from "./primeBank.jsx";
 import UsGreencard from "./UsGreencard.jsx";
+import PublicSpeakingPros4 from "./publicSpeaking4.0.jsx";
 
 const Update = () => {
   return (
@@ -22,11 +23,19 @@ const Update = () => {
              Club Updates
             </h1>
 
+
+
+            <section className="bg-white shadow-lg rounded-2xl p-2">
+        <PublicSpeakingPros4 />
+      </section>
+
+
       {/* US Green Card Event Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
         {<UsGreencard />}
       </section>
 
+      
       {/* Prime Bank Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
         {primeBank()}

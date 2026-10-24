@@ -13,6 +13,7 @@ import GenSubmissions from "../updates/genSubmission.jsx";
 
 import PrimeBank from "../updates/primeBank.jsx";
 import UsGreencard from "../updates/UsGreencard.jsx";
+import PublicSpeakingPros4 from "../updates/publicSpeaking4.0.jsx";
 
 
 
@@ -28,10 +29,16 @@ const Home = () => {
     <>
       <DynamicContent />
 
-      {/* Today's Event Section */}
+    {/* Today's Event Section */}
       <section className="bg-white shadow-lg rounded-2xl p-2">
-       <UsGreencard/>
+       <PublicSpeakingPros4/>
       </section>
+    
+
+      {/* Today's Event Section */}
+      {/* <section className="bg-white shadow-lg rounded-2xl p-2">
+       <UsGreencard/>
+      </section> */}
     
     
     <section className="bg-white shadow-lg rounded-2xl p-2">
